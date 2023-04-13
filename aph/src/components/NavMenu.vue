@@ -19,11 +19,11 @@
 }
 
 .menu-items {
-    width: calc(50% - 71px - 10%);
+    width: calc(50% - 71px - 16%);
     height: 81px;
     position: absolute;
     top: 40px;
-    right: 5%;
+    right: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
