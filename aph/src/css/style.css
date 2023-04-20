@@ -148,15 +148,16 @@ button {
   background-position: center;
   position: absolute;
   top: 50%;
-  left: 4%;
 }
 
 .button-left{
   background-image: url('@/assets/left.png');
+  left: 4%;
 }
 
 .button-right{
   background-image: url('@/assets/right.png');
+  right: 4%;
 }
 
 .services {
