@@ -1,18 +1,14 @@
 export default [
     {
         id: 1,
-        img: require('@/assets/photos/matvey/IMG_2948.jpg')
+        img: require('@/assets/photos/matvey/street-img-2948.webp')
     },
     {
         id: 2,
-        img: require('@/assets/photos/matvey/IMG_2538.jpg')
+        img: require('@/assets/photos/matvey/street-img-2538.webp')
     },
     {
         id: 3,
-        img: require('@/assets/photos/matvey/IMG_2947.jpg')
-    },
-    {
-        id: 4,
-        img: require('@/assets/photos/matvey/IMG_3751.jpg')
+        img: require('@/assets/photos/matvey/street-img-2947.webp')
     }
 ]
