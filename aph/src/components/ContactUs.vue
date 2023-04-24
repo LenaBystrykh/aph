@@ -10,7 +10,7 @@
             </div>
             <div class="question-right">
                 <input class="question-input" type="text" placeholder="Ваш вопрос">
-                <button class="send-question-btn">Отправить</button>
+                <button class="send-question-btn btn">Отправить</button>
             </div>  
         </div>
     </div>

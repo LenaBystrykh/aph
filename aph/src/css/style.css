@@ -60,18 +60,27 @@
   font-weight: 400;
 }
 
-button {
+.btn {
   background: #EA7D41;
   border-radius: 102px;
-  width: 30%;
   height: 74px;
   font-size: 26px;
   border: none;
+  font-family: "OptimaCyr";
+  font-weight: 400;
+  color: #373043;
+}
+
+.signup-btn {
   position: absolute;
   bottom: 18%;
   right: 8%;
-  font-family: "OptimaCyr";
-  font-weight: 400;
+  width: 30%;
+}
+
+.bottom-btn {
+  bottom: 8%;
+  font-size: 30px;
 }
 
 .portfolio-header {
@@ -195,6 +204,14 @@ button {
 
 .orange {
   color: #EA7D41;
+}
+
+.light {
+  color: #DCD6BC;
+}
+
+.dark {
+  color: #373043;
 }
 
 .calendar-page {
