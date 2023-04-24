@@ -100,6 +100,13 @@ import Footer from '@/components/Footer.vue'
   position: relative;
 }
 
+.sec-4 {
+  overflow: hidden;
+  height: 100vh;
+  border-radius: 100px;
+  margin-top: -200px;
+}
+
 .main-img {
   object-fit: cover;
   width: 100%;
@@ -120,7 +127,6 @@ import Footer from '@/components/Footer.vue'
 
 .z-4 {
   z-index: 4;
-  margin-top: -100px;
   height: 100vh;
   object-position: center -50px;
   width: 110%;
@@ -183,8 +189,7 @@ import Footer from '@/components/Footer.vue'
   color: #373043;
 }
 
-.main-footer {
+/* .main-footer {
   margin-top: -200px;
   /* ПОСЛЕ ДОБАВЛЕНИЯ ПЛИТКИ УБРАТЬ */
-}
 </style>
