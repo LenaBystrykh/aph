@@ -52,10 +52,7 @@
       </div>
     </div>
   </div>
-  <LizaTiles />
-  <KatyaTiles />
   <AlenaTiles />
-  <MatveyTiles />
   <div class="main-footer">
       <ContactUs />
       <Footer></Footer>
