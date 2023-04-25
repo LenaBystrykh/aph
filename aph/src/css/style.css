@@ -6,9 +6,12 @@
 * {
   padding: 0;
   margin: 0;
-  background: #EAE6D7;
   text-align: center;
   font-family: "OptimaCyr";
+}
+
+.portfolio-page {
+  background: #EAE6D7;
 }
 
 .header {

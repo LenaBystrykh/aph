@@ -5,11 +5,6 @@
             <router-link to="/" class="orange-menu-item">о нас</router-link>
             <div class="light-photographers">
                 <router-link to="/" class="orange-menu-item">фотографы</router-link>
-                <div class="light-dropdown-photographers">
-                    <router-link :to="{name:'matvey'}">matvey</router-link>
-                    <router-link :to="{name:'alena'}">alena</router-link>
-                    <router-link :to="{name:'katya'}">katya</router-link>
-                </div>
             </div>
             
             <router-link to="/" class="orange-menu-item">отзывы</router-link>
@@ -53,39 +48,6 @@
     position: relative;
     display: inline-block;
     background: #EAE6D7;
-}
-
-.light-dropdown-photographers {
-    display: none;
-    position: absolute;
-    padding-top: 20px;
-    transform: translateX(-20%);
-    min-width: 160px;
-    z-index: 1;
-    background: #EAE6D7;
-}
-
-.light-dropdown-photographers a {
-    background-color: #DCD6BC;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: 0.3s;
-    border-radius: 30px;
-    margin-bottom: 4px;
-    color: #373043;
-}
-
-.light-dropdown-photographers a:hover {
-    background-color: #EA7D41;
-}
-
-.light-photographers:hover .light-dropdown-photographers {
-    display: block;
-}
-
-.light-photographers:hover .orange-menu-item {
-    color: #373043;
 }
 
 .orange-menu-item:hover {

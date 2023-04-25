@@ -1,61 +1,125 @@
 <template>
-  <NavMenu />
-  <div class="main-section main-section-first">
-    <h1 class="main-header">Чтобы устроить фотосессию, нужно<br>просто захотеть</h1>
-    <div class="main-btns">
-      <button class="main-signup btn">Записаться на фотосессию</button>
-      <button class="btn main-choose-ph">Выбрать фотографа</button>
-    </div>
-  </div>
-  <div class="main-section main-content-section">
-    <div class="main-section-description desc-first">
-      <h2 class="main-section-title light">Love-story</h2>
-      <p class="main-section-text light">Это память о прекрасном жизненном периоде и романтических<br>моментах, связанных с вашей второй половинкой</p>
-      <button class="main-section-btn light-btn">Выбрать фотографа</button>
-    </div>
-    <img class="main-img z-2" src="@/assets/photos/main/img-1648.webp">
-  </div>
-  <div class="main-section main-content-section sec-3">
-    <div class="main-section-description">
-      <h2 class="main-section-title dark">Студийная<br>съемка</h2>
-      <p class="main-section-text dark">Возможность реализовать любые творческие<br>идеи и использовать возможности студии</p>
-      <button class="main-section-btn dark-btn">Выбрать фотографа</button>
-    </div>
-    <img class="main-img z-3" src="@/assets/photos/main/img-8274.webp">
-  </div>
-  <div class="main-section main-content-section sec-4">
-    <div class="main-section-description desc-last">
-      <h2 class="main-section-title orange">Street-style<br>съемка</h2>
-      <p class="main-section-text orange">Возможность реализовать любые творческие<br>идеи и использовать красоту города </p>
-      <button class="main-section-btn orange-btn">Выбрать фотографа</button>
-    </div>
-    <img class="main-img z-4" src="@/assets/photos/main/img-1974.webp">
-  </div>
-  <div class="main-photographers-section">
-    <h2 class="main-photographers-title orange">Наши фотографы</h2>
-    <div class="main-photographers">
-      <div class="main-photographer">
-        <img class="main-alena" src="@/assets/photos/a.png">
-        <p>Алена</p>
-      </div>
-      <div class="main-photographer">
-        <img class="main-matvey" src="@/assets/photos/m.png">
-        <p>Матвей</p>
-      </div>
-      <div class="main-photographer">
-        <img class="main-liza" src="@/assets/photos/e.png">
-        <p>Елизавета</p>
-      </div>
-      <div class="main-photographer">
-        <img class="main-katya" src="@/assets/photos/k.png">
-        <p>Екатерина</p>
+  <div class="main-page">
+    <NavMenu />
+    <div class="main-section main-section-first">
+      <h1 class="main-header">Чтобы устроить фотосессию, нужно<br>просто захотеть</h1>
+      <div class="main-btns">
+        <button class="main-signup btn">Записаться на фотосессию</button>
+        <button class="btn main-choose-ph">Выбрать фотографа</button>
       </div>
     </div>
-  </div>
-  <AlenaTiles />
-  <div class="main-footer">
-      <ContactUs />
-      <Footer></Footer>
+    <div class="main-section main-content-section">
+      <div class="main-section-description desc-first">
+        <h2 class="main-section-title light">Love-story</h2>
+        <p class="main-section-text light">Это память о прекрасном жизненном периоде и романтических<br>моментах, связанных с вашей второй половинкой</p>
+        <button class="main-section-btn light-btn">Выбрать фотографа</button>
+      </div>
+      <img class="main-img z-2" src="@/assets/photos/main/img-1648.webp">
+    </div>
+    <div class="main-section main-content-section sec-3">
+      <div class="main-section-description">
+        <h2 class="main-section-title dark">Студийная<br>съемка</h2>
+        <p class="main-section-text dark">Возможность реализовать любые творческие<br>идеи и использовать возможности студии</p>
+        <button class="main-section-btn dark-btn">Выбрать фотографа</button>
+      </div>
+      <img class="main-img z-3" src="@/assets/photos/main/img-8274.webp">
+    </div>
+    <div class="main-section main-content-section sec-4">
+      <div class="main-section-description desc-last">
+        <h2 class="main-section-title orange">Street-style<br>съемка</h2>
+        <p class="main-section-text orange">Возможность реализовать любые творческие<br>идеи и использовать красоту города </p>
+        <button class="main-section-btn orange-btn">Выбрать фотографа</button>
+      </div>
+      <img class="main-img z-4" src="@/assets/photos/main/img-1974.webp">
+    </div>
+    <div class="main-photographers-section" @click="photographer = ''">
+      <h2 class="main-photographers-title orange">Наши фотографы</h2>
+      <div class="main-photographers">
+        <router-link :to="{name: 'alena'}" class="main-photographer" @mouseover="photographer = 'alena'">
+          <div>
+            <img class="main-alena" src="@/assets/photos/a.png">
+            <p>Алена</p>
+          </div>
+        </router-link>
+        
+        <router-link :to="{name: 'matvey'}" class="main-photographer" @mouseover="photographer = 'matvey'">
+          <div>
+            <img class="main-matvey" src="@/assets/photos/m.png">
+            <p>Матвей</p>
+          </div>
+        </router-link>
+        
+        <router-link :to="{name: 'katya'}" class="main-photographer" @mouseover="photographer = 'liza'">
+          <div>
+            <img class="main-liza" src="@/assets/photos/e.png">
+            <p>Елизавета</p>
+          </div>
+        </router-link>
+        
+        <router-link :to="{name: 'katya'}" class="main-photographer" @mouseover="photographer = 'katya'">
+          <div>
+            <img class="main-katya" src="@/assets/photos/k.png">
+            <p>Екатерина</p>
+          </div>
+        </router-link>
+      </div>
+    </div>
+    <Transition>
+      <div class="main-photoshoot-info" v-if="photographer == ''">
+        <h2 class="main-photographers-title orange">Фотосессии с нами</h2>
+        <h3 class="main-photoshoot-subtitle orange">Приобретая одну фотосессию, вы получаете:</h3>
+        <div class="main-advantages">
+          <div class="main-advantage">
+            <h3>// личную консультацию с фотографом</h3>
+            <p>на которой вы расскажете друг другу<br>об идеях и своих ожиданиях</p>
+          </div>
+          <div class="main-advantage">
+            <h3>// мудборд</h3>
+            <p>который составит для вас фотограф, чтобы убедиться<br>в едином видении характера съемки</p>
+          </div>
+          <div class="main-advantage">
+            <h3>// презентацию</h3>
+            <p>которую составит для вас фотограф, чтобы убедиться<br>в едином видении характера съемки</p>
+          </div>
+          <div class="main-advantage">
+            <h3>// индивидуальный плейлист</h3>
+            <p>который во время съемки поможет еще лучше прочувствовать атмосферу<br>и погрузиться в неё</p>
+          </div>
+          <div class="main-advantage">
+            <h3>// комфортную фотосессию</h3>
+            <p>на которой фотограф будет вашим другом и помощником,<br>а вы будете чувствовать себя легко и свободно</p>
+          </div>
+          <div class="main-advantage">
+            <h3>// приятные ощущения</h3>
+            <p>вдохновение, которое обычно испытывают наши клиенты<br>во время съемки и после её окончания</p>
+          </div>
+          <div class="main-advantage">
+            <h3 class="main-advantage-orange">// живые фотографии, где вы будете<br>настоящими</h3>
+          </div>
+          <div class="main-advantage">
+            <h3>// желание однажды повторить<br>съемку с APH снова</h3>
+          </div>
+        </div>
+      </div>
+    </Transition>
+    
+    <Transition>
+      <AlenaTiles v-if="photographer == 'alena'" @click="photographer = ''" />
+    </Transition>
+    <Transition>
+      <MatveyTiles v-if="photographer == 'matvey'" @click="photographer = ''" />
+    </Transition>
+    <Transition>
+      <LizaTiles v-if="photographer == 'liza'" @click="photographer = ''" />
+    </Transition>
+    <Transition>
+      <KatyaTiles v-if="photographer == 'katya'" @click="photographer = ''" />
+    </Transition>
+
+    <div class="main-footer">
+        <ContactUs />
+        <Footer></Footer>
+    </div>
   </div>
 
 </template>
@@ -74,11 +138,15 @@ import KatyaTiles from '@/components/KatyaTiles.vue'
 import AlenaTiles from '@/components/AlenaTiles.vue'
 import MatveyTiles from '@/components/MatveyTiles.vue'
 import LizaTiles from '@/components/LizaTiles.vue'
+
+import { ref } from 'vue'
+
+let photographer = ref('')
 </script>
 
 <style>
 
-* {
+.main-page {
   background: #373043;
 }
 
@@ -106,7 +174,6 @@ import LizaTiles from '@/components/LizaTiles.vue'
   display: flex;
   bottom: 20vh;
   padding-left: 8%;
-
   position: absolute;
   width: 92%;
   height: 74px;
@@ -118,9 +185,9 @@ import LizaTiles from '@/components/LizaTiles.vue'
 }
 
 .main-choose-ph {
-  background: #373043;
   width: 390px;
   border: 2px solid #EA7D41;
+  background: #373043;
   color: #DCD6BC;
 }
 
@@ -285,5 +352,58 @@ import LizaTiles from '@/components/LizaTiles.vue'
 
 .tiles-item {
   border-radius: 5px;
+}
+
+.main-photoshoot-subtitle {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 100px 0 60px 8%;
+  text-align: left;
+}
+
+.main-advantages {
+  display: flex;
+  width: 84%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.main-advantage {
+  width: 46%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.main-advantage h3 {
+  font-size: 40px;
+  color: #DCD6BC;
+  font-weight: 400;
+  text-align: left;
+}
+
+.main-advantage-orange {
+  color: #EA7D41 !important;
+}
+
+.main-advantage p {
+  font-size: 20px;
+  color: #DCD6BC;
+  font-weight: 400;
+  text-align: left;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>

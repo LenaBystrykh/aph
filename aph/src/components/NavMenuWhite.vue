@@ -6,10 +6,10 @@
             <div class="dark-photographers">
                 <router-link to="/" class="light-menu-item">фотографы</router-link>
                 <div class="dark-dropdown-photographers">
-                    <router-link :to="{name:'matvey'}">street-style</router-link>
-                    <router-link :to="{name:'alena'}">love-story</router-link>
-                    <router-link :to="{name:'katya'}">студийная</router-link>
-                    <router-link :to="{name:'katya'}">семейная</router-link>
+                    <div>street-style</div>
+                    <div>love-story</div>
+                    <div>студийная</div>
+                    <div>семейная</div>
                 </div>
             </div>
             
@@ -66,7 +66,7 @@
     background: #373043;
 }
 
-.dark-dropdown-photographers a {
+.dark-dropdown-photographers div {
     background-color: #DCD6BC;
     width: 207px;
     height: 41px;
@@ -81,7 +81,13 @@
     align-items: center;
 }
 
-.dark-dropdown-photographers a:hover {
+.dark-dropdown-photographers div:nth-child(2) {
+    background-color: #373043;
+    border: 2px solid #DCD6BC;
+    color: #EA7D41;
+}
+
+.dark-dropdown-photographers div:nth-child(3) {
     background-color: #EA7D41;
 }
 
