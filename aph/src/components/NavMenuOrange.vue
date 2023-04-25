@@ -19,7 +19,7 @@
     padding: 40px 0 0 0;
     width: 100%;
     height: 81px;
-    background: #EAE6D7;
+    background: none;
 }
 
 .menu-light-items {
@@ -32,7 +32,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background: #EAE6D7;
+    background: none;
 }
 
 .orange-menu-item {
@@ -41,13 +41,13 @@
     color: #EA7D41;
     text-decoration: none;
     transition: 0.3s;
-    background: #EAE6D7;
+    background: none;
 }
 
 .light-photographers {
     position: relative;
     display: inline-block;
-    background: #EAE6D7;
+    background: none;
 }
 
 .orange-menu-item:hover {

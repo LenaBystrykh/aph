@@ -1,6 +1,6 @@
 <template>
     <nav class="menu-dark">
-        <img src="@/assets/logo_white.png" style="background: #373043;">
+        <img src="@/assets/logo_white.png" style="background: none;">
         <div class="menu-dark-items">
             <router-link to="/" class="light-menu-item">о нас</router-link>
             <div class="dark-photographers">
@@ -25,7 +25,7 @@
     padding: 40px 0 0 0;
     width: 100%;
     height: 81px;
-    background: #373043;
+    background: none;
 }
 
 .menu-dark-items {
@@ -38,7 +38,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background: #373043;
+    background: none;
 }
 
 .light-menu-item {
@@ -47,13 +47,13 @@
     color: #DCD6BC;
     text-decoration: none;
     transition: 0.3s;
-    background: #373043;
+    background: none;
 }
 
 .dark-photographers {
     position: relative;
     display: inline-block;
-    background: #373043;
+    background: none;
 }
 
 .dark-dropdown-photographers {
@@ -63,7 +63,7 @@
     transform: translateX(-20%);
     min-width: 160px;
     z-index: 1;
-    background: #373043;
+    background: none;
 }
 
 .dark-dropdown-photographers div {

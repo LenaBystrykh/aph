@@ -5,8 +5,8 @@
         </div>
         <div class="question-form">
             <div class="question-left">
-                <p class="question-title">задайте нам вопрос</p>
-                <p class="question-text">Уточните условия и этапы проведения вашей съемки или задайте вопрос о сотрудничестве</p>
+                <p class="question-title">задайте нам<br>вопрос</p>
+                <p class="question-text">Уточните условия и этапы проведения вашей<br>съемки или задайте вопрос о сотрудничестве</p>
             </div>
             <div class="question-right">
                 <input class="question-input" type="text" placeholder="Ваш вопрос">
@@ -33,7 +33,7 @@
 }
 
 .question-form {
-    width: 84%;
+    width: 68%;
     height: 250px;
     background: rgba(220, 214, 188, 0.84);
     border-radius: 100px;
@@ -43,15 +43,16 @@
     transform: translate(-50%,-50%);
     display: flex;
     flex-direction: row;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .question-left {
-    width: 22%;
+    width: 46%;
     height: 100%;
     display: flex;
     flex-direction: column;
     background: none;
-    padding-left: 8%;
 }
 
 .question-title {
@@ -73,14 +74,16 @@
 }
 
 .question-right {
-    width: 70%;
+    width: 54%;
     background: none;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .question-input {
     height: 60px;
-    width: 600px;
+    width: 100%;
     background: #373043;
     border: none;
     color: #FFFFFF;
@@ -88,26 +91,19 @@
     font-size: 18px;
     border-radius: 100px;    
     padding-left: 30px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 25%;
+    outline: none;
 }
 
 .question-input::placeholder {
     color: #9F998F;
     text-align: left;
     font-size: 18px;
-
 }
 
 .send-question-btn {
     width: 200px;
     height: 60px;
-    font-size: 18px;    
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 16%;
+    font-size: 18px;
+    margin-left: -20%;
 }
 </style>

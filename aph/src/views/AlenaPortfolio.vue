@@ -8,7 +8,7 @@
             </div>
             <img class="alena-photo" src="@/assets/photos/a.png">
             <p class="name alena-name">Алена Ишметова</p>
-            <button class="btn signup-btn">Записаться на фотосессию</button>
+            <router-link :to="{name: 'signup'}"><button class="btn signup-btn">Записаться на фотосессию</button></router-link>
         </div>
 
         <div class="portfolio">
@@ -69,7 +69,7 @@
             <div class="calendar">
                 <div v-for="index in 35" :key="index" class="calendar-cell"></div>
             </div>
-            <button class="btn signup-btn bottom-btn">Записаться на фотосессию</button>
+            <router-link :to="{name: 'signup'}"><button class="btn signup-btn bottom-btn">Записаться на фотосессию</button></router-link>
         </div>
         <ContactUs />
         <Footer></Footer>

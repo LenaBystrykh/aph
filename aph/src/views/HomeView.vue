@@ -4,15 +4,15 @@
     <div class="main-section main-section-first">
       <h1 class="main-header">Чтобы устроить фотосессию, нужно<br>просто захотеть</h1>
       <div class="main-btns">
-        <button class="main-signup btn">Записаться на фотосессию</button>
-        <button class="btn main-choose-ph">Выбрать фотографа</button>
+        <router-link :to="{name: 'signup'}"><button class="main-signup btn">Записаться на фотосессию</button></router-link>
+        <a href="#main-photographers-list"><button class="btn main-choose-ph">Выбрать фотографа</button></a>
       </div>
     </div>
     <div class="main-section main-content-section">
       <div class="main-section-description desc-first">
         <h2 class="main-section-title light">Love-story</h2>
         <p class="main-section-text light">Это память о прекрасном жизненном периоде и романтических<br>моментах, связанных с вашей второй половинкой</p>
-        <button class="main-section-btn light-btn">Выбрать фотографа</button>
+        <a href="#main-photographers-list"><button class="main-section-btn light-btn">Выбрать фотографа</button></a>
       </div>
       <img class="main-img z-2" src="@/assets/photos/main/img-1648.webp">
     </div>
@@ -20,7 +20,7 @@
       <div class="main-section-description">
         <h2 class="main-section-title dark">Студийная<br>съемка</h2>
         <p class="main-section-text dark">Возможность реализовать любые творческие<br>идеи и использовать возможности студии</p>
-        <button class="main-section-btn dark-btn">Выбрать фотографа</button>
+        <a href="#main-photographers-list"><button class="main-section-btn dark-btn">Выбрать фотографа</button></a>
       </div>
       <img class="main-img z-3" src="@/assets/photos/main/img-8274.webp">
     </div>
@@ -28,11 +28,11 @@
       <div class="main-section-description desc-last">
         <h2 class="main-section-title orange">Street-style<br>съемка</h2>
         <p class="main-section-text orange">Возможность реализовать любые творческие<br>идеи и использовать красоту города </p>
-        <button class="main-section-btn orange-btn">Выбрать фотографа</button>
+        <a href="#main-photographers-list"><button class="main-section-btn orange-btn">Выбрать фотографа</button></a>
       </div>
       <img class="main-img z-4" src="@/assets/photos/main/img-1974.webp">
     </div>
-    <div class="main-photographers-section" @click="photographer = ''">
+    <div class="main-photographers-section" @click="photographer = ''" id="main-photographers-list">
       <h2 class="main-photographers-title orange">Наши фотографы</h2>
       <div class="main-photographers">
         <router-link :to="{name: 'alena'}" class="main-photographer" @mouseover="photographer = 'alena'">
@@ -182,6 +182,7 @@ let photographer = ref('')
 .main-signup {
   width: 390px;
   margin-right: 14px;
+  cursor: pointer;
 }
 
 .main-choose-ph {
@@ -189,6 +190,7 @@ let photographer = ref('')
   border: 2px solid #EA7D41;
   background: #373043;
   color: #DCD6BC;
+  cursor: pointer;
 }
 
 .main-content-section {
@@ -268,6 +270,7 @@ let photographer = ref('')
   border: none;
   font-family: "OptimaCyr";
   font-weight: 400;
+  cursor: pointer;
 }
 
 .light-btn {
