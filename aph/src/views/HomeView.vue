@@ -37,28 +37,28 @@
       <div class="main-photographers">
         <router-link :to="{name: 'alena'}" class="main-photographer" @mouseover="photographer = 'alena'">
           <div>
-            <img class="main-alena" src="@/assets/photos/a.png">
+            <img class="main-photographer-img main-alena" :class="[photographer != 'alena' && photographer != '' ? 'hidden-img' : 'visible-img']" src="@/assets/photos/a.png">
             <p>Алена</p>
           </div>
         </router-link>
         
         <router-link :to="{name: 'matvey'}" class="main-photographer" @mouseover="photographer = 'matvey'">
           <div>
-            <img class="main-matvey" src="@/assets/photos/m.png">
+            <img class="main-photographer-img main-matvey" :class="[photographer != 'matvey' && photographer != '' ? 'hidden-img' : 'visible-img']" src="@/assets/photos/m.png">
             <p>Матвей</p>
           </div>
         </router-link>
         
         <router-link :to="{name: 'katya'}" class="main-photographer" @mouseover="photographer = 'liza'">
           <div>
-            <img class="main-liza" src="@/assets/photos/e.png">
+            <img class="main-photographer-img main-liza" :class="[photographer != 'liza' && photographer != '' ? 'hidden-img' : 'visible-img']" src="@/assets/photos/e.png">
             <p>Елизавета</p>
           </div>
         </router-link>
         
         <router-link :to="{name: 'katya'}" class="main-photographer" @mouseover="photographer = 'katya'">
           <div>
-            <img class="main-katya" src="@/assets/photos/k.png">
+            <img class="main-photographer-img main-katya" :class="[photographer != 'katya' && photographer != '' ? 'hidden-img' : 'visible-img']" src="@/assets/photos/k.png">
             <p>Екатерина</p>
           </div>
         </router-link>
@@ -312,6 +312,10 @@ let photographer = ref('')
   background: none;
 }
 
+.main-photographer-img {
+  transition: 0.5s;
+}
+
 .main-photographer p {  
   position: absolute;
   bottom: 40px;
@@ -405,5 +409,13 @@ let photographer = ref('')
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
+}
+
+.hidden-img {
+  opacity: 0.3;
+}
+
+.visible-img {
+  opacity: 1;
 }
 </style>
