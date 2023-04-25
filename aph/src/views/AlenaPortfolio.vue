@@ -5,7 +5,7 @@
         <div class="header-card">
             <p class="alena-text">Привет, меня зовут Алёна! Я фотографирую с самого подросткового возраста и за это время я успела полюбить искренние эмоции и яркие улыбки людей    на своих фото-карточках. Буду рада, если вы окажетесь следующими, чьи живые снимки пополнят мою коллекцию</p>
         </div>
-        <img class="alena-photo" src="@/assets/photos/alena/a.png">
+        <img class="alena-photo" src="@/assets/photos/a.png">
         <p class="name alena-name">Алена Ишметова</p>
         <button class="btn signup-btn">Записаться на фотосессию</button>
     </div>

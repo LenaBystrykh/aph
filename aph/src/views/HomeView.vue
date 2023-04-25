@@ -31,6 +31,31 @@
     </div>
     <img class="main-img z-4" src="@/assets/photos/main/img-1974.webp">
   </div>
+  <div class="main-photographers-section">
+    <h2 class="main-photographers-title orange">Наши фотографы</h2>
+    <div class="main-photographers">
+      <div class="main-photographer">
+        <img class="main-alena" src="@/assets/photos/a.png">
+        <p>Алена</p>
+      </div>
+      <div class="main-photographer">
+        <img class="main-matvey" src="@/assets/photos/m.png">
+        <p>Матвей</p>
+      </div>
+      <div class="main-photographer">
+        <img class="main-liza" src="@/assets/photos/e.png">
+        <p>Елизавета</p>
+      </div>
+      <div class="main-photographer">
+        <img class="main-katya" src="@/assets/photos/k.png">
+        <p>Екатерина</p>
+      </div>
+    </div>
+  </div>
+  <LizaTiles />
+  <KatyaTiles />
+  <AlenaTiles />
+  <MatveyTiles />
   <div class="main-footer">
       <ContactUs />
       <Footer></Footer>
@@ -48,13 +73,21 @@ export default {
 import NavMenu from '@/components/NavMenuWhite.vue'
 import ContactUs from '@/components/ContactUs.vue'
 import Footer from '@/components/Footer.vue'
+import KatyaTiles from '@/components/KatyaTiles.vue'
+import AlenaTiles from '@/components/AlenaTiles.vue'
+import MatveyTiles from '@/components/MatveyTiles.vue'
+import LizaTiles from '@/components/LizaTiles.vue'
 </script>
 
 <style>
+
+* {
+  background: #373043;
+}
+
 .main-section {
   width: 100%;
   height: 100vh;
-  background: #373043;
   position: relative;
 }
 
@@ -65,7 +98,6 @@ import Footer from '@/components/Footer.vue'
 .main-header {
   font-size: 70px;
   color: #EA7D41;
-  background: #373043;
   font-weight: 400;
   text-align: left;
   padding-left: 8%;
@@ -77,7 +109,7 @@ import Footer from '@/components/Footer.vue'
   display: flex;
   bottom: 20vh;
   padding-left: 8%;
-  background: #373043;
+
   position: absolute;
   width: 92%;
   height: 74px;
@@ -189,7 +221,72 @@ import Footer from '@/components/Footer.vue'
   color: #373043;
 }
 
-/* .main-footer {
-  margin-top: -200px;
-  /* ПОСЛЕ ДОБАВЛЕНИЯ ПЛИТКИ УБРАТЬ */
+.main-photographers-title {
+  font-size: 70px;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 8%;
+  padding-top: 100px;
+}
+
+.main-photographers {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.main-photographer {
+  height: 400px;
+  position: relative;
+  width: 23.5%;
+}
+
+.main-photographer img {
+  position: absolute;  
+  background: none;
+}
+
+.main-photographer p {  
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  color: #DCD6BC;
+}
+
+.main-alena {
+  height: 380px;
+  left: -80px;
+  top: -42px;
+}
+
+.main-matvey {
+  height: 290px;
+  left: -10px;
+  top: -7px;
+}
+
+.main-liza {
+  height: 310px;
+  left: -50px;
+  top: -30px;
+}
+
+.main-katya {
+  height: 400px;
+  left: 40px;
+  top: -4px;
+}
+
+.main-tiles {
+  width: 80%;
+  margin: 40px auto 100px;
+}
+
+.tiles-item {
+  border-radius: 5px;
+}
 </style>
