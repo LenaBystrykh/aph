@@ -72,7 +72,6 @@
             <router-link :to="{name: 'signup'}"><button class="btn signup-btn bottom-btn">Записаться на фотосессию</button></router-link>
         </div>
         <ContactUs />
-        <Footer></Footer>
     </div>
 </template>
 

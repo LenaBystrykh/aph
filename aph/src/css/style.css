@@ -72,6 +72,12 @@
   font-family: "OptimaCyr";
   font-weight: 400;
   color: #373043;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #DCD6BC;
 }
 
 .signup-btn {

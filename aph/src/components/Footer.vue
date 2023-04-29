@@ -2,9 +2,9 @@
     <footer>
         <div class="info">
             <div>
-                <a class="info-item" href="/">Instagram</a>
-                <a class="info-item" href="/">Вконтакте</a>
-                <a class="info-item" href="/">Telegram</a>
+                <a class="info-item" href="https://instagram.com/aph.alive">Instagram</a>
+                <a class="info-item" href="https://vk.com/aph.alive">Вконтакте</a>
+                <a class="info-item" href="https://t.me/alivephotosaph">Telegram</a>
             </div>
             <div>
                 <p class="info-item">info@aph.com</p>
@@ -16,7 +16,7 @@
             <router-link to="/" class="footer-menu-item">о нас</router-link>
             <router-link to="/" class="footer-menu-item">фотографы</router-link>
             <router-link to="/" class="footer-menu-item">отзывы</router-link>
-            <router-link to="/" class="footer-menu-item">контакты</router-link>
+            <router-link :to="{name: 'contacts'}" class="footer-menu-item">контакты</router-link>
         </div>
     </footer>
 </template>
@@ -59,6 +59,12 @@ footer img{
     display: block;
     text-align: left;
     line-height: 40px;
+    transition: 0.3s;
+}
+
+.info-item:hover {
+    color: #DCD6BC;
+    cursor: pointer;
 }
 
 .footer-menu-items {
@@ -80,5 +86,11 @@ footer img{
     color: #373043;
     text-decoration: none;
     background: #EA7D41;
+    transition: 0.3s;
+}
+
+.footer-menu-item:hover {
+    color: #DCD6BC;
+    cursor: pointer;
 }
 </style>

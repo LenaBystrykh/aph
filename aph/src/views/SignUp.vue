@@ -1,5 +1,5 @@
 <template>
-    <div class="signup-bg-img"></div>
+    <div class="signup-bg-container"><div class="signup-bg-blur"></div></div>
     <div class="signup-page">
         <NavMenu />
         <div class="signup-content">
@@ -32,16 +32,7 @@
         
         <div class="signup-footer">
             <div class="signup-question-form">
-                <div class="question-form">
-                    <div class="question-left">
-                        <p class="question-title">задайте нам<br>вопрос</p>
-                        <p class="question-text">Уточните условия и этапы проведения вашей<br>съемки или задайте вопрос о сотрудничестве</p>
-                    </div>
-                    <div class="question-right">
-                        <input class="question-input" type="text" placeholder="Ваш вопрос">
-                        <button class="send-question-btn btn">Отправить</button>
-                    </div>  
-                </div>
+                <QuestionForm />
             </div>
             <Footer />
         </div>
@@ -57,6 +48,7 @@
 <script setup>
 import Footer from '@/components/Footer.vue'
 import NavMenu from '@/components/NavMenuWhite.vue'
+import QuestionForm from '@/components/QuestionForm.vue'
 import { ref } from 'vue'
 
 let chooseOption = ref('')
@@ -65,31 +57,39 @@ let chooseOption = ref('')
 </script>
 
 <style>
-.signup-bg-img {
+.signup-bg-container {
     background: url(@/assets/photos/alena/love-img-1520.webp) center/cover no-repeat;
     width: 100%;
-    height: 160vh;
-    filter: blur(15px);
+    height: calc(1301px + 15vh);
     position: absolute;
     top: 0;
     left: 0;
 }
 
+.signup-bg-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(1301px + 15vh);
+    backdrop-filter: blur(15px);
+}
+
 .signup-page {
     width: 100%;
-    height: 160vh;
+    height: calc(1301px + 15vh);
     position: relative;
 }
 
 .signup-content {
     width: calc(388px + 388px + 30px);
     margin: auto;
-    margin-top: 10%;
+    margin-top: 15vh;
     display: flex;
     justify-content: space-between;
     z-index: 2;
     height: auto;
-    min-height: 350px;
+    height: 450px;
     position: relative;
 }
 
@@ -115,6 +115,7 @@ let chooseOption = ref('')
     justify-content: center;
     align-items: center;
     padding: 0 70px;
+    transition: 0.3s;
 }
 
 .signup-choose-btn:nth-child(2) {
@@ -138,7 +139,12 @@ let chooseOption = ref('')
     justify-content: center;
     align-items: center;
     padding: 0 40px;
+    transition: 0.3s;
+}
+
+.signup-confirm-btn:hover {
     cursor: pointer;
+    color: #DCD6BC;
 }
 
 .signup-option {
@@ -157,6 +163,7 @@ let chooseOption = ref('')
 .signup-question-form {
     position: relative;
     height: 250px;
+    margin: 100px auto;
 }
 
 .signup-footer {
@@ -168,6 +175,5 @@ let chooseOption = ref('')
 .signup-footer footer {
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-    margin-top: 100px;
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
-    <nav class="menu-light">
-        <img src="@/assets/logo_white.png" style="background: none;">
-        <div class="menu-light-items">
-            <router-link to="/" class="light-menu-item">о нас</router-link>
-            <div class="light-photographers">
-                <router-link to="/" class="light-menu-item">фотографы</router-link>
-                <div class="light-dropdown-photographers">
+    <nav class="menu-dark">
+        <img src="@/assets/logo_dark.png" style="background: none;">
+        <div class="menu-dark-items">
+            <router-link to="/" class="dark-menu-item">о нас</router-link>
+            <div class="dark-photographers">
+                <router-link to="/" class="dark-menu-item">фотографы</router-link>
+                <div class="dark-dropdown-photographers">
                     <div>street-style</div>
                     <div>love-story</div>
                     <div>студийная</div>
@@ -13,14 +13,14 @@
                 </div>
             </div>
             
-            <router-link to="/" class="light-menu-item">отзывы</router-link>
-            <router-link :to="{name: 'contacts'}" class="light-menu-item">контакты</router-link>
+            <router-link to="/" class="dark-menu-item">отзывы</router-link>
+            <router-link :to="{name: 'contacts'}" class="dark-menu-item">контакты</router-link>
         </div>
     </nav>
 </template>
 
 <style>
-.menu-light {
+.menu-dark {
     position: relative;
     padding: 40px 0 0 0;
     width: 100%;
@@ -28,7 +28,7 @@
     background: none;
 }
 
-.menu-light-items {
+.menu-dark-items {
     width: calc(50% - 71px - 16%);
     height: 81px;
     position: absolute;
@@ -41,22 +41,22 @@
     background: none;
 }
 
-.light-menu-item {
+.dark-menu-item {
     font-weight: 400;
     font-size: 20px;
-    color: #DCD6BC;
+    color: #373043;
     text-decoration: none;
     transition: 0.3s;
     background: none;
 }
 
-.light-photographers {
+.dark-photographers {
     position: relative;
     display: inline-block;
     background: none;
 }
 
-.light-dropdown-photographers {
+.dark-dropdown-photographers {
     display: none;
     position: absolute;
     padding-top: 20px;
@@ -66,7 +66,7 @@
     background: none;
 }
 
-.light-dropdown-photographers div {
+.dark-dropdown-photographers div {
     background-color: #DCD6BC;
     width: 207px;
     height: 41px;
@@ -81,25 +81,25 @@
     align-items: center;
 }
 
-.light-dropdown-photographers div:nth-child(2) {
+.dark-dropdown-photographers div:nth-child(2) {
     background-color: #373043;
     border: 2px solid #DCD6BC;
     color: #EA7D41;
 }
 
-.light-dropdown-photographers div:nth-child(3) {
+.dark-dropdown-photographers div:nth-child(3) {
     background-color: #EA7D41;
 }
 
-.light-photographers:hover .light-dropdown-photographers {
+.dark-photographers:hover .dark-dropdown-photographers {
     display: block;
 }
 
-.light-photographers:hover .light-menu-item {
-    color: #EA7D41;
+.dark-photographers:hover .dark-menu-item {
+    color: #DCD6BC;
 }
 
-.light-menu-item:hover {
-    color: #EA7D41;
+.dark-menu-item:hover {
+    color: #DCD6BC;
 }
 </style>

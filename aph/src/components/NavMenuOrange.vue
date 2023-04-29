@@ -1,20 +1,20 @@
 <template>
-    <nav class="menu-light">
+    <nav class="menu-orange">
         <img src="@/assets/logo_orange.png">
-        <div class="menu-light-items">
+        <div class="menu-orange-items">
             <router-link to="/" class="orange-menu-item">о нас</router-link>
-            <div class="light-photographers">
+            <div class="orange-photographers">
                 <router-link to="/" class="orange-menu-item">фотографы</router-link>
             </div>
             
             <router-link to="/" class="orange-menu-item">отзывы</router-link>
-            <router-link to="/" class="orange-menu-item">контакты</router-link>
+            <router-link :to="{name: 'contacts'}" class="orange-menu-item">контакты</router-link>
         </div>
     </nav>
 </template>
 
 <style>
-.menu-light {
+.menu-orange {
     position: relative;
     padding: 40px 0 0 0;
     width: 100%;
@@ -22,7 +22,7 @@
     background: none;
 }
 
-.menu-light-items {
+.menu-orange-items {
     width: calc(50% - 71px - 16%);
     height: 81px;
     position: absolute;
@@ -44,7 +44,7 @@
     background: none;
 }
 
-.light-photographers {
+.orange-photographers {
     position: relative;
     display: inline-block;
     background: none;

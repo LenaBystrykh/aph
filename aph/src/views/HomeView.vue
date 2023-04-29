@@ -118,7 +118,6 @@
 
     <div class="main-footer">
         <ContactUs />
-        <Footer></Footer>
     </div>
   </div>
 
@@ -182,7 +181,6 @@ let photographer = ref('')
 .main-signup {
   width: 390px;
   margin-right: 14px;
-  cursor: pointer;
 }
 
 .main-choose-ph {
@@ -190,6 +188,11 @@ let photographer = ref('')
   border: 2px solid #EA7D41;
   background: #373043;
   color: #DCD6BC;
+  transition: 0.3s;
+}
+
+.main-choose-ph:hover {
+  background: #EA7D41;
   cursor: pointer;
 }
 
@@ -270,6 +273,10 @@ let photographer = ref('')
   border: none;
   font-family: "OptimaCyr";
   font-weight: 400;
+  transition: 0.3s;
+}
+
+.main-section-btn:hover {
   cursor: pointer;
 }
 
@@ -283,9 +290,17 @@ let photographer = ref('')
   color: #DCD6BC;
 }
 
+.light-btn:hover, .dark-btn:hover {
+  color: #EA7D41;
+}
+
 .orange-btn {
   background: #EA7D41;
   color: #373043;
+}
+
+.orange-btn:hover {
+  color: #DCD6BC;
 }
 
 .main-photographers-title {
